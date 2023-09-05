@@ -1,5 +1,6 @@
 # This is an example .goreleaser.yml file with some sensible defaults.
 # Make sure to check the documentation at https://goreleaser.com
+# gorelease token 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
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -7,6 +8,7 @@ before:
     # you may remove this if you don't need go generate
     - go generate ./...
 builds:
+  - binary: mainbloc
   - env:
       - CGO_ENABLED=0
     goos:

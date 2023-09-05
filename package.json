@@ -1,0 +1,37 @@
+{
+  "name": "mainbloc",
+  "version": "0.1.0",
+  "description": "A cli for everyone",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "goBinary": {
+    "name": "myBinaryName",
+    "path": "./bin",
+    "url": "https://github.com/mainblocs/mainbloc/releases/tag/v{{version}}/mainbloc_{{platform}}_{{arch}}.tar.gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/example/example-cli.git"
+  },
+  "author": "Your-Name",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/example/example-cli/issues"
+  },
+  "goBinary": {
+    "name": "example",
+    "path": "./bin"
+  },
+  "homepage": "https://github.com/xendit/xendit-cli#readme",
+  "files": [
+    "dist",
+    "postinstall.js"
+  ],
+  "dependencies": {
+    "go-npm": "^0.1.9",
+    "mkdirp": "^1.0.4"
+  }
+}
